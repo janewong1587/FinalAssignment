@@ -15,3 +15,49 @@ For each record it is provided:
 
 ## Including Files
 
+- 'features.txt': List of all features.
+
+- 'activity_labels.txt': Links the class labels with their activity name.
+
+- 'X_train.txt': Training set.
+
+- 'y_train.txt': Training labels.
+
+- 'X_test.txt': Test set.
+
+- 'test/y_test.txt': Test labels.
+
+- 'subject_test/train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+## Algorithm
+
+# Step 1
+Read and label the "activity_labels.txt" and "features.txt", e.g. in activity_labels table, Activity_ID =1 ,whereas Activity_Names = WALKING.
+
+# Step 2
+Read and label the "y_test.txt" and "y_train.txt" from test and train data seperately.
+
+# Step 3
+Match the test/train labels with activity names.
+
+# Step 4
+Read the training and the test sets, and the column names are the features.
+
+# Step 5
+Extract the mean and standard deviation from the column names.
+
+# Step 6
+Read and label the test and train subject information.
+
+# Step 7
+Join test/train sets with correspoinding subject and activity information
+
+# Step 8
+Join test and train data together
+
+# Step 9
+Cleanup the variable names by removing "-", ",", "()", etc.
+
+
+# Step 10
+Average the variables for each activity and each subject, and then write it to a new file.
